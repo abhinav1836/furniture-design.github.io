@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+/* *Common Classes */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-jcsa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bt-more{
+    height: 5vh;
+    background-color: rgb(248,189,88);
+    border: none;
+}
+
+.bt-more a{
+    color: white;
+}
+
+.section-res{
+    width: 80%;
+    margin: 0 auto;
+}
+/* *Tags */
+html{
+    font-size: 20px;
+    font-family: 'Gothic A1', sans-serif;
+}
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    transition: 0.5s ease;
+    /* background-attachment: fixed;  ⭐Important for making background disappear */
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h5{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: black;
+}
+h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+p{  
+    text-transform: capitalize;
+    color: rgb(42,42,42);
+}
+nav{
+    background:rgba(26, 28, 24, 0.1);  /*⭐ important  for transparent navbar*/
+    background-size: cover;  /*⭐ important  for transparent navbar */
+    position:sticky;
+}
+section{
+    margin: 0 auto;
+}
+
+/* *NAVBAR SECTION */
+.navbar div{
+    height: 10vh;
+    flex-direction: row;
+}
+.logo{
+    width: 40%;
+}
+
+.logo a{
+    color: rgb(52, 25, 0);
+}
+
+.menu{
+    /* background-color: red; */
+    width: 30%;
+}
+.menu .list-items{
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.list-items li {
+    padding: 0px 6%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* background-color: yellowgreen; */
+    width: 100%; 
+    height: 100%;
+  }
+  .list-items a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(72, 51, 32);
+  }
+  .list-items li:hover{
+    background-color: rgb(248,189,88);
+  }
+  .list-items a:hover{
+    color: white ;
+  }
+
+
+.phno{
+    width: 40%;
+}
+.active{
+    background-color: rgb(42,42,42);
+}
+header.active * {
+    color: white
+  }
+  
+/* *HOME SECTION */
+.home{
+    justify-content: space-evenly;
+    list-style: none;
+    min-height: 100vh;
+    background: url(../Images/furniture.jpg) no-repeat bottom; 
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-position: center;
+}
+
+.home-text-left{
+    text-align: left;
+    padding-top: 4vw;
+    padding-left: 9vw;
+}
+
+.home-text-left h1{
+    margin-bottom: -1vh;
+    letter-spacing: 3.5px;
+}
+.home-text-left p{
+    font-size: .95rem;
+    text-transform: capitalize;
+    color: rgb(42,42,42);
+    margin-bottom: 1vh;
+
+}
+#home-btn{
+    width: 55%;
+}
+
+
+/** ABOUT SECTION */
+.about {
+    /* padding: 12vh 0vw; */
+    flex-direction: column;
+}
+
+.about-head{
+    flex-direction: column;
+    padding: 12vh 0vw 3vh;
+}
+.about-head p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(42,42,42,0.5);
+}
+.about-left h2{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.about-left p{
+    font-weight: 300;
+    font-size: 0.86rem;
+}
+
+.about img{
+    height: 50vh;
+}
+
+#abt-btn{
+    width:10vw;
+}
+
+/* *SERVICES SECTION */
+.services{
+    padding: 0 0 10vh 0;
+    background-color: rgb(0,0,0,0.08);
+    justify-content: space-evenly;
+}
+
+.services img{
+    width: 22vw;
+    height: 35vh;
+    object-fit: cover;
+}
+
+/* *News Section */
+.news{
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+.news-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.news h3{
+    font-size: 1.2rem;
+    padding: 1.5vh 0;
+}
+.news h4{
+    color: rgb(248,189,88);
+    padding: 0 0 1.5vh;
+}
+.news img{
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+#news-btn{
+    width: 40vw;
+    height: 8vh;
+    display: grid;
+}
+.news-left a{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.news-right{
+    width: 45%;
+}
+.news-right p{
+    font-size: 0.95rem;
+}
+.news-right h5{
+    padding: 2vh 0 0vh;
+}
+
+/* *SIGNUP SECTION */
+.signup{
+    padding: 10vh 0 5vh;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.08);
+}
+.signup input{
+    width:50%;
+    height: 5vh;
+    border: none;
+}
+.signup input::placeholder{
+    padding-left: 2vw;
+    font-size: 1rem;
+}
+.email{
+    width: 80%;
+    padding: 5vh 0 10vh;
+}
+
+/* *FOOTER SECTION */
+footer div{
+    padding:1%;
+}
+footer{
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+}
+.footer-width{
+    width: 80%;
+    display: flex;
+    padding: 10vh 0 0vh;
+}
+
+footer ul{
+    list-style: none;
+}
+footer a{
+    border-bottom: 1px solid rgb(42,42,42);;
+    color: rgb(148, 143, 143);
+}
+
+.f-left{
+    width: 100%;
+}
+.f-mid{
+    width: 30%;
+}

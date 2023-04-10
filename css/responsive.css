@@ -1,0 +1,146 @@
+/* FOR HAMBURGER */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.hamburger span{
+    border-color: #fff;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+  
+@media(max-width: 640px){
+    .hamburger{
+        display: block;
+    }
+    .phno
+    {
+        display: none;
+    }
+    .hamburger.active-ham.bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active-ham.bar:nth-child(1){
+        transform: translateY(-8px) rotate(45deg);
+    }
+    .hamburger.active-ham.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .list-items{
+        position: fixed;
+        flex-direction: column;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        background-color: rgb(88,88,88);
+        color: white;
+        width: 60%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .list-items li{
+        margin: 16px;
+        display: block;
+    }
+    .list-items.active-ham{
+        left: 0;
+
+    }
+}
+
+@media(max-width: 640px){
+    section,.news-left,.news-right,.news-left img{
+        width: 100%;
+    }
+    /** FLEX DIRECTION COLUMN */
+    .list-items,.about-bottom,.footer-width,.service-images,.news-bottom{
+        flex-direction: column;
+    }
+
+    /* *FOR NAVBAR */
+    .menu .list-items{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: -9vh;
+
+    }
+    .menu .list-items li{
+        height: 10vh;
+        margin: 0;
+        padding: 10px;
+    }
+    .menu .list-items a{
+        font-size: 2.0rem;
+        color: white;
+    }
+    /* *FOR HOME */
+    .home{
+        width: 100%;
+        background-position: top;
+        background-size: contain;
+    }
+
+    .home h1{
+        text-align: center;
+        padding-top: 70vh;
+        font-size: 1.5rem;
+    }
+    .home-text-left{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #home-btn{
+        margin-top: 3vh;
+        width: 90%;
+        height: 10vh;
+    }
+    #home-btn a{
+        font-size: 1rem;
+    }
+    /** SERVICES SECTION  */
+    .services img{
+        padding: 1vh 0 10vh;
+        width: 90%;
+        object-fit: cover;
+        height: 45vh;
+    }
+    #gallery{
+        width: 100%;
+    }
+    /* *NEWS SECTION */
+    .news-left{
+        margin: 0 auto;
+    }
+    #news-btn{
+        width: 100%;
+        height: 20vh;
+    }
+    .news h3{
+        margin-top: 10vh;        
+    }
+    .news-left img{
+        height: 50vh;
+        object-fit: cover;
+
+    }
+    .news-left a{
+        font-size: 1.5rem;
+    }
+}
