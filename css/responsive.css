@@ -124,10 +124,10 @@
     }
     /** SERVICES SECTION  */
     .services img{
-        padding: 1vh 0 10vh;
+        padding: 1vh 0 3vh;
         width: 90%;
         object-fit: cover;
-        height: 45vh;
+        height: 30vh;
     }
     #gallery{
         width: 100%;
