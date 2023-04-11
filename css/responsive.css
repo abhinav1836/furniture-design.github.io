@@ -25,6 +25,9 @@
   }
   
 @media(max-width: 640px){
+    html{
+        margin: 0 auto;
+    }
     .hamburger{
         display: block;
     }
@@ -64,7 +67,7 @@
 }
 
 @media(max-width: 640px){
-    section,.news-left,.news-right,.news-left img{
+    section,.news-left,.news-right,.news-left img,.about-right img{
         width: 100%;
     }
     /** FLEX DIRECTION COLUMN */
@@ -113,6 +116,10 @@
     }
     #home-btn a{
         font-size: 1rem;
+    }
+    /* * ABOUT SECTI)ON */
+    .about-right img{
+        object-fit: contain;
     }
     /** SERVICES SECTION  */
     .services img{
