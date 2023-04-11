@@ -76,12 +76,15 @@
     }
 
     /* *FOR NAVBAR */
+    .navbar,header,html{
+        width: 100vw;
+    }
     .menu .list-items{
         height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
-        width: 75%;
         margin-top: -9vh;
+        width: 75%;
 
     }
     .menu .list-items li{
