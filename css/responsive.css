@@ -80,6 +80,7 @@
         height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
+        width: 75%;
         margin-top: -9vh;
 
     }
