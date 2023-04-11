@@ -151,4 +151,11 @@
     .news-left a{
         font-size: 1.5rem;
     }
+    /* *SIGNUP SECTION */
+    .signup h2, .signup p{
+        width: 90%;
+    }
+    .email{
+        width: 25em;
+    }
 }
